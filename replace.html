@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link href="replace.css" rel="stylesheet">
+<html>
+<body>
+<form>
+    <fieldset>
+        <legend>Remplacer</legend>
+<p id="txt">
+        html est un langage informatique utilisé sur l'internet
+        Language html ce qui signifie ce langage permet de réaliser de l'hypertexte à base 
+        d'une structure de balisage.
+</p><br>
+<button type="button" onclick="replace()">Replace HTML</button>
+</fieldset>
+</form>
+<script>
+function replace() {
+   var len = document.getElementById('txt').innerHTML;
+        for(var i=0;i<=len.length;i++)
+        {
+                var el = document.getElementById("txt").innerHTML; 
+                var rep = el.replace("html", "hypertext markup language");
+                document.getElementById("txt").innerHTML = rep;
+        }
+}
+</script>
+
+</body>
+</html>
